@@ -1,0 +1,2 @@
+*.py[o,a,c]
+__pycache__/
