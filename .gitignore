@@ -1,2 +1,4 @@
 *.py[o,a,c]
 __pycache__/
+scrt.yml
+venv/
