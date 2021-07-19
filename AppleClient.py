@@ -23,3 +23,7 @@ class AppleMusic(object):
 
     def add_tracks(self, tracks: List[Track]):
         return NotImplemented
+
+
+def init_apple_client():
+    return NotImplemented

@@ -1,10 +1,12 @@
-apple_auth = ""
-spotify_auth = ""
+from SpotifyClient import SpotifyClient, init_spotify_client
+from AppleClient import AppleClient, init_apple_client
 
-apple = AppleMusic(apple_auth)
-spotify = SpotifyMusic(spotify_auth)
 
 if __name__ == "__main__":
+    # Init clients
+    apple = init_apple_client()
+    spotify = init_spotify_client()
+
     # Liked Songs
     apple.like_songs(spotify.get_songs())
 

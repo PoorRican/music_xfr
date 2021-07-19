@@ -26,7 +26,7 @@ class SpotifyClient(object):
         return [Playlist.from_spotify(i) for i in playlists]
 
 
-def init_client():
+def init_spotify_client():
     with open('scrt.yml', 'r') as f:
         scrt = yaml.load(f)['spotify']
 
