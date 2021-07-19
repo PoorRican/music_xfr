@@ -22,7 +22,8 @@ class Album(object):
     def __repr__(self):
         return f"{self.name} by {self.artist}"
 
-    def from_spotify(album: models.Album):
+    @staticmethod
+    def from_spotify(self, album: models.Album):
         name = album.name
         artist = Artist.from_spotify(album.artists[0])
 
